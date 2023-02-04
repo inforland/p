@@ -5,7 +5,7 @@ How to public private code
 
 How to private public code
 
-1.- helloworld.py
+1.- 001_helloworld.py
 
 #Create a file called helloworld.py
 
@@ -13,25 +13,25 @@ How to private public code
 
 print('Hello World')
 
-2.- app.py
+2.- 002_app.py
 
 #Create a file called app.py
 
 #code example 
 
-text_file = open('helloworld.py'),'rb')
+text_file = open('001_helloworld.py'),'rb')
 
 my_code = text_file.read()
 
 exec(my_code)
 
-3.- encodeandzip.py
+3.- 003_encodeandzip.py
 
 #Execute this file to create a ofuscated code
 
 import zlib, base64
 
-text_file = open('helloworld.py'),'rb')
+text_file = open('001_helloworld.py'),'rb')
 
 my_code = text_file.read()
 
@@ -48,7 +48,7 @@ f.write(compressed_data)
 f.close()
 
 
-4.- testing.py
+4.- 004_testing.py
 
 #testing the code
 
@@ -61,7 +61,7 @@ gzipped_data_fromFile = base64.b64encode(compressed_data_fromFile).decode()
 exec(zlib.decompress(base64.b64decode(gzipped_data_fromFile)))
 
 
-5.- frominternet.py 
+5.- 005_frominternet.py 
 
 #submit que file to github
 
