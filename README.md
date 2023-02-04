@@ -40,7 +40,7 @@ compressed_data_fromFile = fichero.read()
 gzipped_data_fromFile = base64.b64encode(compressed_data_fromFile).decode()
 exec(zlib.decompress(base64.b64decode(gzipped_data_fromFile)))
 
-5.- frominternet.py
+5.- frominternet.py 
 #submit que file to github
 import urllib.request
 #download and decode
